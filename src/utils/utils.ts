@@ -1,4 +1,3 @@
-import { duration } from "@mui/material";
 import type { data } from "../manual_data";
 
 export const GENRES = [
