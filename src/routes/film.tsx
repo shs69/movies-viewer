@@ -18,7 +18,8 @@ import {
 
 export async function loader({ request }: { request: Request }) {
 	const url = new URL(request.url);
-	const id = url.pathname.split("/").filter(Boolean)[1];
+	const id = url.pathname.split("/").filter(Boolean)[2];
+	console.log(id);
 
 	const options = {
 		method: "GET",

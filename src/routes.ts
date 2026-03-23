@@ -14,17 +14,17 @@ const router = createBrowserRouter(
 			loader: () => redirect("/films"),
 		},
 		{
-			path: "/films",
+			path: "films",
 			Component: Index,
 			HydrateFallback: LoadingFallback,
 			loader: IndexLoader,
 		},
 		{
-			path: "/compare",
+			path: "compare",
 			Component: Compare,
 		},
 		{
-			path: "/film/:id",
+			path: "film/:id",
 			Component: Film,
 			loader: FilmLoader,
 			HydrateFallback: LoadingFallback,
